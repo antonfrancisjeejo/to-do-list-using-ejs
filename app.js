@@ -48,6 +48,6 @@ app.get("/work", function(req, res) {
     newListItems: workItems
   });
 });
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("server statred at port 3000");
 });
